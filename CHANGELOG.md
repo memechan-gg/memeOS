@@ -1,5 +1,60 @@
 # Changelog
 
+## [3.1.0](https://github.com/ublue-os/bazzite/compare/v3.0.1...v3.1.0) (2024-05-22)
+
+
+### Features
+
+* Add install date to fastfetch ([0f493d7](https://github.com/ublue-os/bazzite/commit/0f493d70af45563355b577ba101e3b5279dd4d5e))
+* Add option to enable desktop integration for Waydroid ([0e8f77d](https://github.com/ublue-os/bazzite/commit/0e8f77dedf68be2136e3f02f344d0f90d63207c5))
+* Add udev rule to do cec onboot when bluetooth device connection ([#1105](https://github.com/ublue-os/bazzite/issues/1105)) ([a37b715](https://github.com/ublue-os/bazzite/commit/a37b7154324db712d951b7083bd45204e788dd55))
+* **deck:** Add DeckHD patch for gamescope ([f86661e](https://github.com/ublue-os/bazzite/commit/f86661ed12d83e23a3ea46039493966b2446ad09))
+* **deck:** Update Handheld-Controller-Glyphs theme with topgrade ([27a7db1](https://github.com/ublue-os/bazzite/commit/27a7db15e44db7bb3630bb382e7d2676e7058463))
+* **desktop:** EmuDeck added to Desktop images ([#1071](https://github.com/ublue-os/bazzite/issues/1071)) ([933e851](https://github.com/ublue-os/bazzite/commit/933e8518147ef0ab5eb457b9335c04c47a82dbe3))
+* **dev:** add easy local iso and vscode integration ([#1127](https://github.com/ublue-os/bazzite/issues/1127)) ([532190e](https://github.com/ublue-os/bazzite/commit/532190ecce6c5914159908ee0bfef9c22d8a696c))
+* **framework:** Add color calibration files for the Framework 16 ([c60e4c1](https://github.com/ublue-os/bazzite/commit/c60e4c1d9125dea31486a95c2f474f5c64f14e8b))
+* **framework:** Add font size patch for Framework 13 ([adc3b49](https://github.com/ublue-os/bazzite/commit/adc3b49d58329e29b5b76c1d06fef7293c26f7b8))
+* **framework:** Apply audio fixes for AMD Framework 13 automatically ([043ef7e](https://github.com/ublue-os/bazzite/commit/043ef7ee7c3bae223ab3fdad038d241c5cba499e))
+* **framework:** Move OSD over volume buttons ([e813c33](https://github.com/ublue-os/bazzite/commit/e813c33f21de8622cca5425b7a1c5a6e3d178acd))
+* **framework:** Use older mediatek firmware for Framework 16 ([dbe2aec](https://github.com/ublue-os/bazzite/commit/dbe2aec915f1a15bf437ebe275fee61da1a575a2))
+* **gnome:** Add triple buffering patched mutter ([b9a9c33](https://github.com/ublue-os/bazzite/commit/b9a9c33ac5c4ee1c6922ea130ab337528d04613b))
+* **gnome:** Use auto-power-profile extension with customizations from Universal Blue ([45f533e](https://github.com/ublue-os/bazzite/commit/45f533ed434224f6dd7663c83b38c77c1bd145b8))
+* homebrew on image ([2dbf297](https://github.com/ublue-os/bazzite/commit/2dbf29701b0b89a335fcc712b2d67a99255e3f42))
+* **just:** add recipe to restart proton ([#1091](https://github.com/ublue-os/bazzite/issues/1091)) ([4219f5f](https://github.com/ublue-os/bazzite/commit/4219f5f6ad4173fe2d2f5bc5629788a42364b6ae))
+* New .desktop shortcuts (Docs and Landing) ([#1146](https://github.com/ublue-os/bazzite/issues/1146)) ([01967d1](https://github.com/ublue-os/bazzite/commit/01967d17562e23013227a0fc22fc872a066590bd))
+* **nvidia:** Default to x11 again ([#1078](https://github.com/ublue-os/bazzite/issues/1078)) ([03bdd6a](https://github.com/ublue-os/bazzite/commit/03bdd6a9744d749916cdc8249f8af6da71f9c109))
+* Recover from GPU crashes on the primary GPU - from jupiter-hw-support ([cae8d96](https://github.com/ublue-os/bazzite/commit/cae8d96985c317604780f1b6babb7ae38c15caa9))
+* Remove waydroid-launcher from desktop images now that X11 is no longer a common concern. Deck images will continue to use it for simplicity, but this change opens up desktop users to Waydroid's native window mode that integrates your android apps like native app windows. ([7bc10b9](https://github.com/ublue-os/bazzite/commit/7bc10b9d493b12929801028a9adf3ca5f604e867))
+* Switch to zap for managing AppImages, auto-update zap installed AppImages with Topgrade ([7d291a1](https://github.com/ublue-os/bazzite/commit/7d291a10ad94e460ba156ea1093369d908b5696d))
+* **ujust:** add install-boxtron ([#1152](https://github.com/ublue-os/bazzite/issues/1152)) ([54b8ced](https://github.com/ublue-os/bazzite/commit/54b8ced0fa221530b8fd1a21da31cbba7e881e8c))
+
+
+### Bug Fixes
+
+* allow setting Ptyxis transparency to 1 (fully opaque) ([#1109](https://github.com/ublue-os/bazzite/issues/1109)) ([231aca3](https://github.com/ublue-os/bazzite/commit/231aca390f3f1ff7988647ca564a0dd25f0dc378))
+* **ally:** Correct power save issue automatically ([420f934](https://github.com/ublue-os/bazzite/commit/420f934b729109fcfccd45a5bc7b3ea70c999551))
+* Always use sudo for waydroid GPU selector ([1d2a513](https://github.com/ublue-os/bazzite/commit/1d2a51333c8c54937b7a15992cce007cc6cce950))
+* AOKZOE A1 Pro (AMD R愛zen 7840U) - Add device to simpledeckytdp-supported-hardware and hhd-supported-hardware, as well as add waydroid-launcher resolution ([#1126](https://github.com/ublue-os/bazzite/issues/1126)) ([fda8b60](https://github.com/ublue-os/bazzite/commit/fda8b6055af575d3b518c4a1b65cb5f0d9e4d58a))
+* brew auto upgrade services ([#1135](https://github.com/ublue-os/bazzite/issues/1135)) ([fd7640d](https://github.com/ublue-os/bazzite/commit/fd7640dedbbc2d4404d58ac857397ade8d39b2cd))
+* **ci:** Bump kernel signer to v0.2.0 ([e5dd721](https://github.com/ublue-os/bazzite/commit/e5dd721501902a992af9f13586ff9981ac64458b))
+* **ci:** Update kernel signer to v0.2.1, pass default tag ([2222c89](https://github.com/ublue-os/bazzite/commit/2222c89a5189de32544299e49c840e8004beb619))
+* correct brew directory. ([#1140](https://github.com/ublue-os/bazzite/issues/1140)) ([feb4cdc](https://github.com/ublue-os/bazzite/commit/feb4cdcc20b804c09ea4677f3c4005e967d37844))
+* correct file ([3812263](https://github.com/ublue-os/bazzite/commit/3812263d532b391d40ac11c8845c82829cb6e429))
+* **deck:** fix Handheld Controller Glyphs theme folder casing ([#1096](https://github.com/ublue-os/bazzite/issues/1096)) ([6181223](https://github.com/ublue-os/bazzite/commit/6181223d31babd40e921cf154e78310e616078f1))
+* **deck:** Remove ssd_spread mount option from BTRFS SD card options. Fixes a bug with some hardware where the SD card reports as full erroneously. ([6bc8af8](https://github.com/ublue-os/bazzite/commit/6bc8af8efd8de45ce0996c8545976f535b2f9dc1))
+* **desktop:** sqlite column error in btrfs-dedup service ([#1099](https://github.com/ublue-os/bazzite/issues/1099)) ([e61cd24](https://github.com/ublue-os/bazzite/commit/e61cd2424e14a854f75fae58d1fb5fbaaa5566d2))
+* Disable joycond by default until BT issues can be triaged. ([3ef01c8](https://github.com/ublue-os/bazzite/commit/3ef01c846363a66d0f96e3d13ed1f6c3d5051a98))
+* **gnome:** Change thread type to fix random GNOME login screen crashes ([fe2218e](https://github.com/ublue-os/bazzite/commit/fe2218ec38c83c3a413829424817059b5b8803a4))
+* **kde:** Remove `QT_IM_MODULE` and `GTK_IM_MODULE` for IBus in wayland ([#1069](https://github.com/ublue-os/bazzite/issues/1069)) ([26c8b6d](https://github.com/ublue-os/bazzite/commit/26c8b6d9aaa183bcee4641f0242183a0931f9217))
+* minisforum v3 enable iomem and add waydroid-launcher resolution ([#1077](https://github.com/ublue-os/bazzite/issues/1077)) ([8ff9397](https://github.com/ublue-os/bazzite/commit/8ff93975cc4cde9b13b390b07e9e8b6495798667))
+* **ujust:** Add --or-update flag for Flatpak command ([#1095](https://github.com/ublue-os/bazzite/issues/1095)) ([4bd1872](https://github.com/ublue-os/bazzite/commit/4bd187256a97535a991b0d416ae52c2bd695501d))
+* **ujust:** setup-cdemu script failing to install cdemu ([#1151](https://github.com/ublue-os/bazzite/issues/1151)) ([67759be](https://github.com/ublue-os/bazzite/commit/67759bef8357c88d495bb946faa1d85e042c5d7f))
+* update link to universal blue contributing guide in PR template ([#1083](https://github.com/ublue-os/bazzite/issues/1083)) ([8855f96](https://github.com/ublue-os/bazzite/commit/8855f96a9d9d2d512ed7d981dd72ae8f2380a5b8))
+* Use EmuDeck AppImage ([c2bb74d](https://github.com/ublue-os/bazzite/commit/c2bb74d8e8e36b3222bf1f0226c01d19d0a9f756))
+* Use latest Valve patches in Bluez ([c9ff1bd](https://github.com/ublue-os/bazzite/commit/c9ff1bda5321246c1c004106889372b8c9a4d5ce))
+* Use override replace when upgrading lact with topgrade ([27a7db1](https://github.com/ublue-os/bazzite/commit/27a7db15e44db7bb3630bb382e7d2676e7058463))
+* **waydroid:** Correct issue with controller reset script (Thanks [@kubepy](https://github.com/kubepy)) ([21a9d6d](https://github.com/ublue-os/bazzite/commit/21a9d6ddff1adb21303d0c884d7fa01ea9dfb279))
+
 ## [3.0.1](https://github.com/ublue-os/bazzite/compare/v3.0.0...v3.0.1) (2024-05-02)
 
 
